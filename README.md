@@ -1,4 +1,4 @@
-# Traffic Simulation in Unity 🚦
+# Traffic Simulation in Unity 
 
 ## Description
 
