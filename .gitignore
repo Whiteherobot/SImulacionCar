@@ -17,3 +17,7 @@
 *.opendb
 *.VC.db
 .vs/git init
+Assets/AssetStoreTools*
+Assets/Plugins/Editor/JetBrains*
+Assets/Fantasy Skybox FREE
+Assets/ModularLowpolyStreetsFree
