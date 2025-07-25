@@ -1,65 +1,64 @@
-# Simulación de Tráfico en Unity 🚦
+# Traffic Simulation in Unity 🚦
 
-## Descripción
+## Description
 
-Este proyecto es una simulación de tráfico desarrollada en Unity, orientada a la experimentación con cámaras de tráfico, señales automáticas y comunicación con un backend para el procesamiento de imágenes y control de semáforos. El objetivo es crear un entorno virtual que permita probar algoritmos de visión computacional y lógica de control de tráfico en tiempo real.
+This project is a traffic simulation developed in Unity, aimed at experimenting with traffic cameras, automatic signals, and backend communication for image processing and traffic light control. The goal is to create a virtual environment to test computer vision algorithms and real-time traffic control logic.
 
-## Características principales
+## Main Features
 
-- **Captura de imágenes desde cámaras virtuales** usando scripts personalizados.
-- **Comunicación con backend** vía HTTP para el envío de imágenes y recepción de señales de control.
-- **Control dinámico de semáforos** basado en la respuesta del backend.
-- **Estructura modular** para facilitar la integración de nuevos modelos, materiales y sistemas de IA.
-- **Uso de prefabs y assets personalizados** para escenarios urbanos.
-- **Automatización de ciclos de captura y envío** mediante corutinas en Unity.
-- **Gestión profesional de versiones** usando Git y un `.gitignore` adaptado a proyectos Unity.
+- **Image capture from virtual cameras** using custom scripts.
+- **Backend communication** via HTTP for sending images and receiving control signals.
+- **Dynamic traffic light control** based on backend responses.
+- **Modular structure** to facilitate integration of new models, materials, and AI systems.
+- **Use of custom prefabs and assets** for urban scenarios.
+- **Automated capture and send cycles** using Unity coroutines.
+- **Professional version control** using Git and a Unity-adapted `.gitignore`.
 
-## Estructura del proyecto
+## Project Structure
 
 ```
 Assets/
-  ├── Scripts/                # Lógica principal (cámaras, control de tráfico, etc.)
-  ├── Prefabs/                # Prefabs de vehículos, semáforos, etc.
-  ├── Materials/              # Materiales y texturas
-  ├── Models/                 # Modelos 3D
-  ├── Fantasy Skybox FREE/    # Skybox para ambientación
-  ├── ModularLowpolyStreetsFree/ # Calles y escenarios urbanos
-  └── TutorialInfo/           # Documentación y scripts de ejemplo
+  ├── Scripts/                # Main logic (cameras, traffic control, etc.)
+  ├── Prefabs/                # Vehicle, traffic light prefabs, etc.
+  ├── Materials/              # Materials and textures
+  ├── Models/                 # 3D models
+  ├── Fantasy Skybox FREE/    # Skybox for environment
+  ├── ModularLowpolyStreetsFree/ # Urban streets and scenarios
+  └── TutorialInfo/           # Documentation and sample scripts
 Packages/
-  └── manifest.json           # Dependencias del proyecto
-.vscode/                      # Configuración para Visual Studio Code
-.gitignore                    # Exclusión de archivos innecesarios
+  └── manifest.json           # Project dependencies
+.vscode/                      # Visual Studio Code configuration
+.gitignore                    # Exclusion of unnecessary files
 ```
 
-## Instalación y uso
+## Installation and Usage
 
-1. **Clona el repositorio:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Whiteherobot/SImulacionCar.git
    ```
-2. **Abre la carpeta en Unity Hub** y selecciona la versión recomendada.
-3. **Configura el backend** (ver sección Backend) si deseas probar la comunicación en tiempo real.
-4. **Ejecuta la escena principal** y observa el comportamiento de las cámaras y semáforos.
+2. **Open the folder in Unity Hub** and select the recommended version.
+3. **Configure the backend** (see Backend section) if you want to test real-time communication.
+4. **Run the main scene** and observe the behavior of the cameras and traffic lights.
 
 ## Backend
 
-El proyecto está preparado para comunicarse con un backend en Python (Flask) que recibe imágenes y responde con el estado de la señal.  
-La URL del backend se puede configurar en el script `TrafficCamera.cs`.
+The project is prepared to communicate with a Python (Flask) backend that receives images and responds with the signal state.  
+The backend URL can be configured in the `TrafficCamera.cs` script.
 
-## Buenas prácticas aplicadas
+## Applied Best Practices
 
-- Uso de `.gitignore` específico para Unity, evitando archivos temporales y assets de terceros innecesarios.
-- Separación de lógica en scripts y uso de prefabs para facilitar la reutilización.
-- Documentación en los scripts clave y mensajes de error claros para facilitar el mantenimiento.
-- Estructura de carpetas profesional y limpia.
-- Control de versiones desde el inicio del proyecto.
+- Use of a Unity-specific `.gitignore`, avoiding temporary files and unnecessary third-party assets.
+- Separation of logic into scripts and use of prefabs for easy reuse.
+- Documentation in key scripts and clear error messages for easier maintenance.
+- Professional and clean folder structure.
+- Version control from the start of the project.
 
-## Créditos
+## Credits
 
-- [Unity Asset Store](https://assetstore.unity.com/) por los assets gratuitos utilizados.
-- Desarrollo y documentación: **[Tu Nombre o Equipo]**
+- [Unity Asset Store](https://assetstore.unity.com/) for the free assets used.
+- Development and documentation: **Michael Lata, Jorge Cueva, Michael Franco, Bryam Mejia**
 
-## Licencia
+## License
 
-Este proyecto es de uso académico y experimental. Consulta el archivo LICENSE para más detalles.
-
+This project is for academic and experimental use. See the LICENSE
